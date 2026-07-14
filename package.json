@@ -1,0 +1,15 @@
+{
+  "name": "vibetrip-ai",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace api\" \"npm run dev --workspace web\"",
+    "build": "npm run build --workspace api && npm run build --workspace web"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
