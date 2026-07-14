@@ -1,1 +1,21 @@
+# Virtual Environment
+.venv/
+
+# Environment Variables
 .env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
