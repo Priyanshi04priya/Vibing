@@ -99,6 +99,11 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
+              <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-sm text-white/70">
+                <div><span className="font-medium text-white">Memory:</span> {result.memory_summary || 'No memory yet'}</div>
+                <div className="mt-2"><span className="font-medium text-white">Hidden gems:</span> {result.hidden_gems?.join(', ')}</div>
+                <div className="mt-2"><span className="font-medium text-white">Food picks:</span> {result.food_recommendations?.join(' • ')}</div>
+              </div>
             </div>
           )}
         </motion.div>

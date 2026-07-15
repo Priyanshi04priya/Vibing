@@ -38,3 +38,4 @@ class TripPlanResponse(BaseModel):
     packing_list: list[str]
     safety_notes: list[str]
     instagram_caption: str
+    memory_summary: str | None = None
